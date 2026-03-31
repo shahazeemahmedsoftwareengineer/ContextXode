@@ -79,7 +79,6 @@ function getFileIcon(name: string) {
 
 function App() {
   const [tree, setTree] = useState<TreeNode[]>([]);
-  const [content, setContent] = useState("");
   const [fullContext, setFullContext] = useState("");
   const [expandedPaths, setExpandedPaths] = useState<Set<string>>(new Set());
   const [filesMap, setFilesMap] = useState<FilesMap>({});
@@ -117,7 +116,6 @@ function App() {
       });
 
       setTree(buildTree(filePaths, folder));
-      setContent(result[1]);
       setFullContext(`${result[0]}\n\n${result[1]}`);
       setViewMode("project");
       setExpandedPaths(new Set()); // Reset tree state on new export
