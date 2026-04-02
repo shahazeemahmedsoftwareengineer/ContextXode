@@ -18,7 +18,7 @@
       }
     ],
     "security": {
-      "csp": null
+      "csp": "default-src 'self'; script-src 'self' https://media.ethicalads.io; img-src 'self' https://media.ethicalads.io; style-src 'self' 'unsafe-inline'; connect-src 'self';"
     }
   },
   "bundle": {

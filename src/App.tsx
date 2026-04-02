@@ -289,6 +289,19 @@ function App() {
           border-radius: 4px;
           transition: all 0.2s;
         }
+
+        /* EthicalAds slot styling */
+        #contextxode-ad {
+          margin-top: 20px;
+          min-height: 100px;
+          width: 100%;
+          max-width: 100%;
+          background: rgba(15, 23, 42, 0.4);
+          border: 1px solid #334155;
+          border-radius: 8px;
+          display: block;
+          color: #cbd5e1;
+        }
         .view-toggle button.active {
           background: #1e293b;
           color: #fff;
@@ -325,6 +338,16 @@ function App() {
           ) : (
             renderTree(tree)
           )}
+        </div>
+
+        <div className="ad-slot" style={{ padding: '12px', textAlign: 'center' }}>
+          <div
+            id="contextxode-ad"
+            className="horizontal"
+            data-ea-publisher="your_username_here"
+            data-ea-type="image"
+            style={{ width: '100%', minHeight: '100px' }}
+          ></div>
         </div>
       </aside>
 
